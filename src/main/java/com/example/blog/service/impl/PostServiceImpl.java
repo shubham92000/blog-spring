@@ -82,13 +82,13 @@ public class PostServiceImpl implements PostService {
     }
 
     private PostDto mapToDTO(Post post) {
-        PostDto postDto = new PostDto();
-        postDto.setId(post.getId());
-        postDto.setTitle(post.getTitle());
-        postDto.setDescription(post.getDescription());
-        postDto.setContent(post.getContent());
+//        PostDto postDto = new PostDto();
+//        postDto.setId(post.getId());
+//        postDto.setTitle(post.getTitle());
+//        postDto.setDescription(post.getDescription());
+//        postDto.setContent(post.getContent());
 
-//        PostDto postDto = modelMapper.map(post, PostDto.class);
+        PostDto postDto = modelMapper.map(post, PostDto.class);
         return postDto;
     }
 
